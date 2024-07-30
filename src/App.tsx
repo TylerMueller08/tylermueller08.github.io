@@ -5,6 +5,8 @@ import '@mantine/core/styles.css';
 import { createTheme, MantineProvider } from '@mantine/core';
 import { HeaderSimple } from './components/HeaderSimple';
 import { FooterCentered } from './components/FooterCentered';
+import ParticlesComponent from './components/tsparticles';
+import AboutSection from './components/AboutSection';
 
 const theme = createTheme({
   headings: { fontFamily: "Fira Code, monospace", fontWeight: "500" }
@@ -15,6 +17,8 @@ export default function App() {
     {
       <>
         <HeaderSimple/>
+        <ParticlesComponent/>
+        <AboutSection/>
         <FooterCentered/>
       </>
     }
